@@ -44,7 +44,11 @@ def input_students
 # while the name is not empty repeat the code
   while !name.empty? do
     @students << {name: name, cohort: :november}
-    puts "Now we have #{@students.count} students"
+    if @students.count == 1
+      puts "Now we have #{@students.count} student"
+    else
+      puts "Now we have #{@students.count} students"
+    end
 #   get next name from user
     name = STDIN.gets.chomp
   end
