@@ -12,11 +12,8 @@ def interactive_menu
 end
 
 def print_menu
-  puts "1. Input the students"
-  puts "2. Show the students"
-  puts "3. Save the list to students.csv"
-  puts "4. Load the list from students.csv"
-  puts "9. Exit"
+  menu = ["1. Input the students", "2. Show the students", "3. Save the list to students.csv", "4. Load the list from students.csv", "9. Exit"] 
+  menu.each { |option| puts option }
 end
 
 def process(selection)
